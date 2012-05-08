@@ -3,3 +3,6 @@
 .project
 target/
 .SpringBeans
+.idea
+*.iml
+*.imp
