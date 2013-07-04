@@ -6,12 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
+import cucumber.runtime.java.StepDefAnnotation;
 
+@StepDefAnnotation
 public class SpeechSteps {
 
 	@Autowired
 	private App app;
-	
+
 	@Given("an application")
 	public void an_application() {
 		assertNotNull(app);
